@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		
+			<head>
+				<title>Tic Poem Generator</title>
+				<link rel="stylesheet" href="../stylesheets/main.css">
+				<link href="bootstrap/bootstrap.css" rel="stylesheet" media="screen">
+				<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+			</head>
+			
+		<div="fluid-container">
+			<div class=row>
+				<div class= col-xs-6>
+					<h1 class="text-primary">Tic Poem Generator</h1>
+					<h3>Welcome to the Tic Poem Generator! This webiste creates a rhyming poem from a database of vocal tics from the <a href="http://www.touretteshero.com/" >Tourettes Hero</a>
+						Jess Thom. Many thanks go to Jess for the use of her tics. I hope you enjoy the poetry.</h3>
+				
+				</div>
+			
+				<div class=col-xs-6>
+					<div>
+					<img src="/images/tic_wordcloud.jpg"  width=450 alt="Tick shaped wordcloud from tics">
+					</div>
+				</div>
+			
+			</div>
+				<div class="input-group">
+					<form action="/poem" method="POST">
+						<h4>A Word:</h4> <input type="text" name="chosen_word" class="form-control">
+						<br>
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-success">
+							Submit <i class="fa fa-pencil"></i>
+							</button>
+						</span>
+					</form>
+				</div>
+			
+			<h5>Rhyme results provided by <a href="http://rhymebrain.com/en" >RhymeBrain.com</a></h5>
+		</div>
+	</body>
+</html>
